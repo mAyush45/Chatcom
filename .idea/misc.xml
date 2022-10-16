@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_main.xml" value="0.171225937183384" />
-        <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
+        <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
       </map>
     </option>
   </component>
