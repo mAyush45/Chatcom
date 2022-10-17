@@ -18,12 +18,12 @@
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="155dp"
                 android:layout_marginLeft="10sp"
                 android:layout_marginTop="40sp"
                 android:layout_marginRight="10sp"
                 android:layout_marginBottom="45sp"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/ic_chatcom_logo" />
 
 
             <EditText
@@ -31,14 +31,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:background="@color/white"
                 android:ems="10"
                 android:hint="Email ID"
                 android:inputType="textEmailAddress"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:textColorHint="#AAA3A3"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/password"
@@ -51,7 +52,9 @@
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:textColorHint="#AAA3A3"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/alreadyAcc2"
@@ -61,7 +64,8 @@
                 android:layout_marginRight="20dp"
                 android:padding="8dp"
                 android:text="Click for Sign Up"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/signup"
@@ -71,7 +75,9 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:text="SIGN UP" />
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorPrimaryDark"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -89,6 +95,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="60dp"
                     android:padding="15dp"
+                    android:backgroundTint="@color/lightGrey"
                     app:srcCompat="@drawable/ic_google" />
 
                 <ImageButton
@@ -99,6 +106,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="60dp"
                     android:padding="15dp"
+                    android:backgroundTint="@color/lightGrey"
                     app:srcCompat="@drawable/ic_facebook" />
 
             </LinearLayout>
