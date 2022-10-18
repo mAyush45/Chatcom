@@ -32,7 +32,7 @@ class SignInActivity : AppCompatActivity() {
                 .addOnCompleteListener(OnCompleteListener{
                     progressDialog.dismiss()
                     if(it.isSuccessful){
-                        val i = Intent(this@SignInActivity,MainActivity::class.java)
+                        val i = Intent(this@SignInActivity,NavigationActivity::class.java)
                         startActivity(i)
                     }
                     else{
