@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="Navigation View">
+
+    <item
+        android:id="@+id/newgroup"
+        android:title="New Group"
+        android:icon="@drawable/ic_baseline_group_24"/>
+
+    <item
+        android:id="@+id/contacts"
+        android:title="Contacts"
+        android:icon="@drawable/ic_baseline_contacts_24"/>
+
+    <item
+        android:id="@+id/calls"
+        android:title="Calls"
+        android:icon="@drawable/ic_baseline_call_24"/>
+
+    <item
+        android:id="@+id/peoplenear"
+        android:title="People Nearby"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+    <item
+        android:id="@+id/savedmessages"
+        android:title="Saved Messages"
+        android:icon="@drawable/ic_baseline_message_24"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+
+
+
+</menu>
