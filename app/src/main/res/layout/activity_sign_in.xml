@@ -1,117 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/lightGrey"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        tools:context=".SignUpActivity">
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="45sp"
+            tools:srcCompat="@drawable/ic_chatcom_logo" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColorHint="#AAA3A3"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#AAA3A3"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/clickSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            android:text="Click for Sign Up"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimaryDark"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="match_parent"
-                android:layout_height="155dp"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="40sp"
-                android:layout_marginRight="10sp"
-                android:layout_marginBottom="45sp"
-                tools:srcCompat="@drawable/ic_chatcom_logo" />
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
-                android:background="@color/white"
-                android:ems="10"
-                android:hint="Email ID"
-                android:inputType="textEmailAddress"
-                android:padding="8dp"
-                android:textColorHint="#AAA3A3"
-                android:textColor="@color/black"/>
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="20dp"
-                android:background="@color/white"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                android:textColorHint="#AAA3A3"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/clickSignup"
+            <ImageButton
+                android:id="@+id/google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginRight="20dp"
-                android:padding="8dp"
-                android:text="Click for Sign Up"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:padding="15dp"
+                android:backgroundTint="@color/lightGrey"
+                app:srcCompat="@drawable/ic_google" />
 
-            <Button
-                android:id="@+id/signin"
+            <ImageButton
+                android:id="@+id/fb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:text="SIGN IN"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/colorPrimaryDark"/>
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:padding="15dp"
+                android:backgroundTint="@color/lightGrey"
+                app:srcCompat="@drawable/ic_facebook" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+        </LinearLayout>
 
 
-                <ImageButton
-                    android:id="@+id/google"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="60dp"
-                    android:padding="15dp"
-                    android:backgroundTint="@color/lightGrey"
-                    app:srcCompat="@drawable/ic_google" />
-
-                <ImageButton
-                    android:id="@+id/fb"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="60dp"
-                    android:padding="15dp"
-                    android:backgroundTint="@color/lightGrey"
-                    app:srcCompat="@drawable/ic_facebook" />
-
-            </LinearLayout>
-
-
-            </LinearLayout>
+    </LinearLayout>
 
 
 

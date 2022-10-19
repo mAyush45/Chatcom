@@ -2,6 +2,7 @@ package com.example.chatcom
 
 import android.app.ProgressDialog
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -24,8 +25,8 @@ class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var auth: FirebaseAuth
-    private lateinit var database:DatabaseReference
-    private lateinit var progressDialog:ProgressDialog
+    private lateinit var database: DatabaseReference
+    private lateinit var progressDialog: ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +42,10 @@ class SignUpActivity : AppCompatActivity() {
         binding.signup.setOnClickListener(View.OnClickListener {
 
             progressDialog.show()
-            auth.createUserWithEmailAndPassword(binding.email.text.toString(),binding.password.text.toString()).addOnCompleteListener(
+            auth.createUserWithEmailAndPassword(
+                binding.email.text.toString(),
+                binding.password.text.toString()
+            ).addOnCompleteListener(
                 OnCompleteListener {
                     progressDialog.dismiss()
                     if (it.isSuccessful) {
@@ -63,21 +67,25 @@ class SignUpActivity : AppCompatActivity() {
             val password = binding.password.text.toString()
             val username = binding.username.text.toString()
             database = FirebaseDatabase.getInstance().getReference("Users")
-            val users = Users(username,email,password)
+            val users = Users(username, email, password)
             database.child(username).setValue(users).addOnSuccessListener {
                 binding.username.text.clear()
                 binding.email.text.clear()
                 binding.password.text.clear()
-                Toast.makeText(this@SignUpActivity,"User added Successfully",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@SignUpActivity, "User added Successfully", Toast.LENGTH_SHORT)
+                    .show()
             }.addOnFailureListener {
-                Toast.makeText(this@SignUpActivity,"Failed to add User",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@SignUpActivity, "Failed to add User", Toast.LENGTH_SHORT).show()
             }
 
 
         })
 
+        binding.alreadyAccount.setOnClickListener(View.OnClickListener {
+            val i = Intent(this@SignUpActivity, SignInActivity::class.java)
+            startActivity(i)
+        })
 
 
     }
 }
-
