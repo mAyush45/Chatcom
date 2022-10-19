@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994700483799",
+    "project_id": "chatcom-bfc8d",
+    "storage_bucket": "chatcom-bfc8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994700483799:android:126b2988100b67473ae492",
+        "android_client_info": {
+          "package_name": "com.example.chatcom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994700483799-pvu4u1i8d5kscv80e0grrof35q390qtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDopZx-WBBaxoeG8KE1_6sbE0d6d1AQFtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994700483799-pvu4u1i8d5kscv80e0grrof35q390qtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
