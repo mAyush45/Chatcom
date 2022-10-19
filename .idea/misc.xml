@@ -3,22 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ABCD/app/src/main/res/layout/activity_add_contacts.xml" value="0.46709916589434664" />
+        <entry key="..\:/ABCD/app/src/main/res/layout/activity_sign_in.xml" value="0.23229166666666667" />
+        <entry key="..\:/ABCD/app/src/main/res/layout/activity_sign_up.xml" value="0.23229166666666667" />
+        <entry key="..\:/ABCD/app/src/main/res/layout/contacts_item.xml" value="0.1" />
         <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_main.xml" value="0.171225937183384" />
         <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="..\:/Android_Studio_Projects/Chatcom/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2045" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2045" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_add_contacts.xml" value="0.21481481481481482" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_contacts.xml" value="0.25" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_navigation.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_sign_in.xml" value="0.165" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_sign_up.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/activity_start_up.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/chat_item.xml" value="0.19610507246376813" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/contacts_items.xml" value="0.1" />
-        <entry key="..\:/Concetto/Chatcom/app/src/main/res/layout/nav_header.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/kaush/Chatcom/app/src/main/res/drawable/ic_chatcom_logo.xml" value="0.2385" />
         <entry key="..\:/Users/kaush/Chatcom/app/src/main/res/drawable/ic_facebook.xml" value="0.2385" />
         <entry key="..\:/Users/kaush/Chatcom/app/src/main/res/layout/activity_sign_in.xml" value="0.23229166666666667" />
