@@ -19,6 +19,8 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class SignInActivity : AppCompatActivity() {
 
@@ -26,12 +28,15 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+    private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance().getReference("Users")
+        val uid = auth.currentUser?.uid
         progressDialog = ProgressDialog(this@SignInActivity)
         progressDialog.setTitle("Login")
         progressDialog.setMessage("Login to your account")
@@ -122,3 +127,4 @@ class SignInActivity : AppCompatActivity() {
     }
 
 }
+

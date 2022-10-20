@@ -20,4 +20,6 @@
     <color name="fb_color">#3c5793</color>
     <color name="blackk">#040303</color>
     <color name="lightgreen">#e5ffcc</color>
+    <color name="colorItemLeft">#E6E4E4</color>
+    <color name="colorItemRight">#813fd7</color>
 </resources>
