@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.chatcom">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,37 +14,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chatcom"
         tools:targetApi="31">
-
-        <activity android:name=".NavigationActivity"
-            android:exported="false">
-
-
-        </activity>
-
+        <activity
+            android:name=".profiles.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PhoneLogin"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddContactsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-
-
-        </activity>
-
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="false">
-
-        </activity>
-
-        <activity
-            android:name=".StartUpActivity"
-            android:exported="false">
-
-        </activity>
-
-        <activity
-            android:name=".SignInActivity"
-            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,8 +47,19 @@
             </intent-filter>
 
         </activity>
-
-
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
