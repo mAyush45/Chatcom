@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.Toast
 
@@ -14,6 +15,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chatcom.Adapter.UserAdapter
 import com.example.chatcom.Models.User
+import com.example.chatcom.databinding.ActivityNavigationBinding
+import com.example.chatcom.profiles.MyProfileActivity
+import com.google.android.datatransport.runtime.logging.Logging.d
 
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -22,9 +26,11 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import de.hdodenhof.circleimageview.CircleImageView
 
 
 class NavigationActivity: AppCompatActivity() {
+    private lateinit var binding: ActivityNavigationBinding
 
     private var userList=ArrayList<User>()
 
@@ -34,7 +40,8 @@ class NavigationActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_navigation)
+        binding=ActivityNavigationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         draw()
 
@@ -42,7 +49,9 @@ class NavigationActivity: AppCompatActivity() {
         userRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
 
-
+        binding.navView.getHeaderView(0).findViewById<CircleImageView>(R.id.myprofile1).setOnClickListener{
+            startActivity(Intent(this,MyProfileActivity::class.java))
+        }
         userList.add(User())
         val firebase:FirebaseUser = FirebaseAuth.getInstance().currentUser!!
         var databaseReference =  FirebaseDatabase.getInstance().getReference("UserChat")
@@ -70,6 +79,7 @@ class NavigationActivity: AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+
 
 
     }
